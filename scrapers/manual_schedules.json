@@ -1,0 +1,1328 @@
+{
+    "tramway": {
+        "price": "8 DH",
+        "lines": [
+            {
+                "line": "T1",
+                "route": "Lissasfa <-> Sidi Moumen",
+                "schedules": [
+                    {
+                        "direction": "Lissasfa - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 05:45",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "05:45 - 06:25",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "06:25 - 08:40",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:40 - 11:15",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "11:15 - 13:55",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "13:55 - 14:59",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "14:59 - 17:00",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "17:00 - 19:14",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "19:14 - 21:15",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:15 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "05:30 - 07:15",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "07:15 - 09:00",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "09:00 - 20:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "20:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 06:30",
+                                    "interval": "30 min"
+                                },
+                                {
+                                    "time_range": "06:30 - 12:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "12:00 - 21:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Sidi Moumen - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 06:15",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "06:15 - 07:44",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "07:44 - 09:55",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "09:55 - 12:43",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "12:43 - 15:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "15:30 - 16:40",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:40 - 18:40",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "18:40 - 20:31",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "20:31 - 22:30",
+                                    "interval": "10 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:00 - 07:45",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "07:45 - 08:45",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "08:45 - 10:30",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "10:30 - 21:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 13:30",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "13:30 - 22:30",
+                                    "interval": "10 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "line": "T2",
+                "route": "Ain Diab Plage <-> Sidi Bernoussi",
+                "schedules": [
+                    {
+                        "direction": "Ain Diab Plage - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 05:45",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "05:45 - 06:55",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "06:55 - 07:02",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "07:02 - 07:50",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "07:50 - 08:05",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "08:05 - 16:05",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "16:05 - 17:50",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "17:50 - 21:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "05:30 - 07:30",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "07:30 - 21:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 12:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "12:00 - 21:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Sidi Bernoussi - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 06:15",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "06:15 - 08:25",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "08:25 - 08:32",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "08:32 - 09:20",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "09:20 - 09:35",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "09:35 - 17:25",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "17:25 - 19:10",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "19:10 - 22:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:00 - 08:30",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "08:30 - 22:30",
+                                    "interval": "10 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 13:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "13:00 - 22:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "10 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "line": "T3",
+                "route": "Hay Al Wahda <-> Casa Port",
+                "schedules": [
+                    {
+                        "direction": "Hay Al Wahda - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 07:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "07:00 - 07:50",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "07:50 - 08:20",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "08:20 - 08:50",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:50 - 09:50",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "09:50 - 11:50",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "11:50 - 15:40",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "15:40 - 16:36",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:36 - 18:36",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "18:36 - 21:00",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 21:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:30",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:00 - 07:36",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "07:36 - 10:40",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "10:40 - 20:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "20:30 - 21:30",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 09:45",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "09:45 - 15:21",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "15:21 - 16:11",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "16:11 - 17:31",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "17:31 - 19:21",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "19:21 - 21:45",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:45 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Casa Port - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 06:42",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "06:42 - 07:00",
+                                    "interval": "09 min"
+                                },
+                                {
+                                    "time_range": "07:00 - 07:30",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "07:30 - 08:00",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:00 - 09:00",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "09:00 - 11:00",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "11:00 - 14:50",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "14:50 - 15:46",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "15:46 - 17:46",
+                                    "interval": "06 min"
+                                },
+                                {
+                                    "time_range": "17:46 - 20:10",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:10 - 21:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "05:30 - 06:54",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "06:54 - 09:50",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "09:50 - 20:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "20:00 - 21:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 09:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "09:00 - 14:36",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "14:36 - 15:26",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "15:26 - 16:46",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "16:46 - 18:36",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "18:36 - 21:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "line": "T4",
+                "route": "Mohammed Erradi <-> Parc de la Ligue Arabe",
+                "schedules": [
+                    {
+                        "direction": "Mohammed Erradi - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 07:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "07:00 - 07:40",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "07:40 - 09:48",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "09:48 - 15:18",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "15:18 - 19:18",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "19:18 - 21:18",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:18 - 22:30",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "07:00 - 11:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "11:00 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 09:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "09:00 - 14:12",
+                                    "interval": "13 min"
+                                },
+                                {
+                                    "time_range": "14:12 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Parc de la Ligue Arabe - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 06:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "06:00 - 06:24",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "06:24 - 06:44",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "06:44 - 07:00",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "07:00 - 09:00",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "09:00 - 14:30",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "14:30 - 18:30",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "18:30 - 21:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:30 - 10:00",
+                                    "interval": "10 min"
+                                },
+                                {
+                                    "time_range": "10:00 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 08:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "08:00 - 13:12",
+                                    "interval": "13 min"
+                                },
+                                {
+                                    "time_range": "13:12 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "busway": {
+        "price": "8 DH",
+        "lines": [
+            {
+                "line": "BW1",
+                "route": "Omar El Khayam <-> Salmia 2",
+                "schedules": [
+                    {
+                        "direction": "Omar El Khayam - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 05:54",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "05:54 - 06:50",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "06:50 - 09:02",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "09:02 - 16:02",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:02 - 18:14",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "18:14 - 20:54",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:54 - 21:30",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:00",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "05:30 - 05:54",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "05:54 - 20:18",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:18 - 21:30",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "21:30 - 22:00",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 06:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "06:00 - 14:12",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "14:12 - 21:00",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:00 - 22:00",
+                                    "interval": "12 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Salmia 2 - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 07:36",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "07:36 - 09:48",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "09:48 - 16:55",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:55 - 18:56",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "18:56 - 21:52",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:52 - 22:15",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:15 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:00 - 20:56",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:56 - 22:30",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 14:48",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "14:48 - 21:28",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:28 - 22:15",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:15 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "line": "BW2",
+                "route": "Oulmes <-> Ouled Azzouz",
+                "schedules": [
+                    {
+                        "direction": "Oulmes - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "05:30 - 05:54",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "05:54 - 06:42",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "06:42 - 07:04",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "07:04 - 07:19",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "07:19 - 07:51",
+                                    "interval": "04 min"
+                                },
+                                {
+                                    "time_range": "07:51 - 08:06",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:06 - 09:17",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "09:17 - 16:03",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:03 - 16:31",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "16:31 - 18:16",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "18:16 - 19:06",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "19:06 - 20:26",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:26 - 22:00",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "05:30 - 06:06",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "06:06 - 20:14",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:14 - 22:00",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "05:30 - 06:00",
+                                    "interval": "15 min"
+                                },
+                                {
+                                    "time_range": "06:00 - 14:24",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "14:24 - 20:48",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:48 - 22:00",
+                                    "interval": "12 min"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "direction": "Ouled Azzouz - Terminus",
+                        "frequencies": {
+                            "monday_friday": [
+                                {
+                                    "time_range": "06:00 - 07:12",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "07:12 - 07:45",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "07:45 - 08:00",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:00 - 08:32",
+                                    "interval": "04 min"
+                                },
+                                {
+                                    "time_range": "08:32 - 08:47",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "08:47 - 09:42",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "09:42 - 16:34",
+                                    "interval": "07 min"
+                                },
+                                {
+                                    "time_range": "16:34 - 17:46",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "17:46 - 19:01",
+                                    "interval": "05 min"
+                                },
+                                {
+                                    "time_range": "19:01 - 19:45",
+                                    "interval": "05 min 30s"
+                                },
+                                {
+                                    "time_range": "19:45 - 21:13",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:13 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ],
+                            "saturday": [
+                                {
+                                    "time_range": "06:00 - 20:56",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "20:56 - 22:30",
+                                    "interval": "12 min"
+                                }
+                            ],
+                            "sunday_holidays": [
+                                {
+                                    "time_range": "06:00 - 15:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "15:00 - 21:24",
+                                    "interval": "08 min"
+                                },
+                                {
+                                    "time_range": "21:24 - 22:00",
+                                    "interval": "12 min"
+                                },
+                                {
+                                    "time_range": "22:00 - 22:30",
+                                    "interval": "15 min"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "bus": {
+        "source_note": "Fares from Casabus official site. Operating hours from Wikipedia where available.",
+        "lines": [
+            {
+                "line": "L005",
+                "route": "Terminus Casa Port 2 <-> Terminus Abouab Al Oulfa",
+                "price": "5 DH",
+                "schedule": "Mon-Sun approx 05:40 - 21:00"
+            },
+            {
+                "line": "L006",
+                "route": "Terminus Bd Tah <-> Terminus Place des Nations Unies",
+                "price": "5 DH",
+                "schedule": "Mon-Sun approx 05:40 - 21:04"
+            },
+            {
+                "line": "L007",
+                "route": "Terminus Sidi Maarouf <-> Terminus Place des Nations Unies",
+                "price": "5 DH",
+                "schedule": "Mon-Sun approx 05:40 - 21:25"
+            },
+            {
+                "line": "L09E",
+                "route": "Terminus Nassim <-> Terminus Houphouet boigny",
+                "price": "5 DH",
+                "schedule": "Mon-Sun approx 05:45 - 21:09"
+            },
+            {
+                "line": "L011",
+                "route": "Terminus Mosquée Salmia <-> Terminus El Hank",
+                "price": "5 DH"
+            },
+            {
+                "line": "L013",
+                "route": "Terminus Kasbat Lamine <-> Terminus Commune Sidi Belyout",
+                "price": "5 DH"
+            },
+            {
+                "line": "L019",
+                "route": "Terminus Riad Oulfa 3 <-> Terminus Place des Nations Unies",
+                "price": "5 DH"
+            },
+            {
+                "line": "L020",
+                "route": "Terminus Riad Oulfa <-> Terminus Gare routière",
+                "price": "5 DH"
+            },
+            {
+                "line": "L022",
+                "route": "Terminus Mandarouna <-> Terminus Place des Nations Unies",
+                "price": "5 DH"
+            },
+            {
+                "line": "L023",
+                "route": "Terminus Mansouria <-> Terminus Cinéma Rif",
+                "price": "5 DH"
+            },
+            {
+                "line": "L031",
+                "route": "Terminus Place Sraghna <-> Terminus Sidi Maarouf",
+                "price": "5 DH"
+            },
+            {
+                "line": "L033",
+                "route": "Terminus Anassi <-> Terminus Place la Concorde",
+                "price": "5 DH"
+            },
+            {
+                "line": "L038",
+                "route": "Terminus Hay El Falah <-> Terminus El Hank",
+                "price": "5 DH"
+            },
+            {
+                "line": "L039",
+                "route": "Terminus Gare Ouled Ziane <-> Terminus Lmzabienne",
+                "price": "5 DH"
+            },
+            {
+                "line": "L040",
+                "route": "Terminus Tacharouk <-> Terminus Oued Al Makhazin",
+                "price": "5 DH"
+            },
+            {
+                "line": "L043",
+                "route": "Terminus Doha <-> Terminus Hôpital Sofi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L050",
+                "route": "Terminus Rahma <-> Terminus Commune Sidi Belyout",
+                "price": "5 DH"
+            },
+            {
+                "line": "L051",
+                "route": "Terminus Rahma <-> Terminus Gare routière",
+                "price": "5 DH"
+            },
+            {
+                "line": "L056",
+                "route": "Terminus Tacharouk <-> Terminus Oliveri Maarif",
+                "price": "5 DH"
+            },
+            {
+                "line": "L060",
+                "route": "Terminus Jamila <-> Terminus Hôpital Sofi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L062",
+                "route": "Terminus El Fadl <-> Terminus Hôpital Sofi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L063",
+                "route": "Terminus Salmia <-> Terminus Sidi Lkhadir",
+                "price": "5 DH"
+            },
+            {
+                "line": "L064",
+                "route": "Terminus Ouad Dahab <-> Terminus Bernoussi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L065",
+                "route": "Terminus Ouad Dahab <-> Terminus Hôpital Sofi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L067",
+                "route": "Terminus El Fadl <-> Terminus Harbili",
+                "price": "5 DH"
+            },
+            {
+                "line": "L072",
+                "route": "Terminus Salmia <-> Terminus Sidi Lkhadir",
+                "price": "5 DH"
+            },
+            {
+                "line": "L079",
+                "route": "Terminus Place Sraghna <-> Terminus Sidi Moumen – Terminus T1",
+                "price": "5 DH"
+            },
+            {
+                "line": "L082",
+                "route": "Terminus Sakani <-> Terminus Place la Concorde",
+                "price": "5 DH"
+            },
+            {
+                "line": "L084",
+                "route": "Terminus Farah Salam <-> Terminus Houphouet boigny",
+                "price": "5 DH"
+            },
+            {
+                "line": "L090",
+                "route": "Terminus Bernoussi <-> Terminus musée Alsa",
+                "price": "5 DH"
+            },
+            {
+                "line": "L097",
+                "route": "Terminus Anassi <-> Terminus Maarif",
+                "price": "5 DH"
+            },
+            {
+                "line": "L97B",
+                "route": "Terminus Faculté Ben M'sick <-> Terminus Lissasfa",
+                "price": "5 DH"
+            },
+            {
+                "line": "L107",
+                "route": "Terminus Tacharouk <-> Terminus Lissasfa",
+                "price": "5 DH"
+            },
+            {
+                "line": "L109",
+                "route": "Terminus Zoubir <-> Terminus Gare routière",
+                "price": "5 DH"
+            },
+            {
+                "line": "L139",
+                "route": "Terminus Marjane Ain Sbaa <-> Terminus Hôpital Sofi",
+                "price": "5 DH"
+            },
+            {
+                "line": "L143",
+                "route": "Terminus Tacharouk <-> Terminus Oulfa",
+                "price": "5 DH"
+            },
+            {
+                "line": "L905",
+                "route": "Terminus El Fath 2 <-> Terminus Gare ONCF Mohammedia",
+                "price": "5 DH"
+            },
+            {
+                "line": "L906",
+                "route": "Terminus Nahda <-> Terminus Port Mohammedia",
+                "price": "5 DH"
+            },
+            {
+                "line": "L907",
+                "route": "Terminus Quartier Shems <-> Terminus Rachidia 3",
+                "price": "5 DH"
+            },
+            {
+                "line": "L055",
+                "route": "Terminus Lahraouiyine <-> Terminus Moulay Youssef",
+                "price": "6 DH"
+            },
+            {
+                "line": "L068",
+                "route": "Terminus Lahraouiyine <-> Terminus Hay Salam",
+                "price": "6 DH"
+            },
+            {
+                "line": "L300",
+                "route": "Terminus Quartier des hôpitaux <-> ZI Ouled saleh",
+                "price": "6 DH"
+            },
+            {
+                "line": "L301",
+                "route": "Terminus H.Hassani <-> Terminus Ben Abid",
+                "price": "6 DH"
+            },
+            {
+                "line": "L306",
+                "route": "Terminus khiayta <-> Terminus musée Alsa",
+                "price": "6 DH"
+            },
+            {
+                "line": "L307",
+                "route": "Terminus Ville Ennasr <-> Terminus Lissasfa",
+                "price": "6 DH"
+            },
+            {
+                "line": "L309",
+                "route": "Terminus Prestigia (Ville Verte) <-> Terminus Bachkou",
+                "price": "6 DH"
+            },
+            {
+                "line": "L310",
+                "route": "Terminus Oulad Saleh <-> Terminus Place Sraghna",
+                "price": "6 DH"
+            },
+            {
+                "line": "L600",
+                "route": "Terminus Mediouna <-> Terminus Place Sidi Maârouf",
+                "price": "6 DH"
+            },
+            {
+                "line": "L604",
+                "route": "Terminus Al Hamd <-> Terminus Place Sraghna",
+                "price": "6 DH"
+            },
+            {
+                "line": "L606",
+                "route": "Terminus Bernoussi <-> Terminus Sidi Hajjaj",
+                "price": "6 DH"
+            },
+            {
+                "line": "L608",
+                "route": "Terminus Tit Mellil <-> Terminus Z.I Bernoussi",
+                "price": "6 DH"
+            },
+            {
+                "line": "L800",
+                "route": "Terminus mosquée Tariq <-> Terminus Facultés des sciences (Mohammedia)",
+                "price": "6 DH"
+            },
+            {
+                "line": "L902",
+                "route": "Terminus Sidi Moumen – Terminus T1 <-> Terminus Gare ONCF Mohammedia",
+                "price": "6 DH"
+            },
+            {
+                "line": "L903",
+                "route": "Terminus Gare ONCF Mohammedia <-> Terminus Sidi Moussa Ben Ali",
+                "price": "6 DH"
+            },
+            {
+                "line": "L904",
+                "route": "Terminus Tit Mellil <-> Terminus ISTAHTM Mohammedia",
+                "price": "6 DH"
+            },
+            {
+                "line": "L032D",
+                "route": "Terminus Faculté Ben M'sick <-> Terminus Facultés des sciences (Mohammedia)",
+                "price": "8 DH"
+            },
+            {
+                "line": "L120",
+                "route": "Terminus Mediouna <-> Terminus Bd Paris",
+                "price": "8 DH"
+            },
+            {
+                "line": "L312",
+                "route": "Terminus Zaouia (Nouaceur) <-> Terminus Jamila",
+                "price": "8 DH"
+            },
+            {
+                "line": "L900",
+                "route": "Terminus Rachidia <-> Terminus Sidi Belyout",
+                "price": "8 DH"
+            }
+        ]
+    }
+}

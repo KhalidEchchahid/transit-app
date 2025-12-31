@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: morocco_transport_db
+    environment:
+      POSTGRES_DB: transport
+      POSTGRES_USER: transport
+      POSTGRES_PASSWORD: transport_dev_pwd
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U transport -d transport"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  pgdata:

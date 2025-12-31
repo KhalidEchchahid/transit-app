@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+  --card: rgb(224, 224, 224);
+  --card-foreground: rgb(0, 0, 0);
+  --popover: rgb(240, 240, 240);
+  --popover-foreground: rgb(0, 0, 0);
+  --primary: rgb(255, 0, 0);
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary: rgb(176, 176, 176);
+  --secondary-foreground: rgb(0, 0, 0);
+  --muted: rgb(208, 208, 208);
+  --muted-foreground: rgb(34, 34, 34);
+  --accent: rgb(255, 215, 0);
+  --accent-foreground: rgb(0, 0, 0);
+  --destructive: rgb(160, 0, 0);
+  --destructive-foreground: rgb(255, 255, 255);
+  --border: rgb(0, 0, 0);
+  --input: rgb(224, 224, 224);
+  --ring: rgb(255, 0, 0);
+  --chart-1: rgb(255, 0, 0);
+  --chart-2: rgb(0, 255, 0);
+  --chart-3: rgb(0, 0, 255);
+  --chart-4: rgb(255, 255, 0);
+  --chart-5: rgb(255, 0, 255);
+  --sidebar: rgb(208, 208, 208);
+  --sidebar-foreground: rgb(0, 0, 0);
+  --sidebar-primary: rgb(255, 0, 0);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(255, 215, 0);
+  --sidebar-accent-foreground: rgb(0, 0, 0);
+  --sidebar-border: rgb(0, 0, 0);
+  --sidebar-ring: rgb(255, 0, 0);
+  --font-sans: "Space Mono", monospace;
+  --font-serif: "IBM Plex Mono", monospace;
+  --font-mono: "Space Mono", monospace;
+  --radius: 0px;
+  --shadow-x: 3px;
+  --shadow-y: 3px;
+  --shadow-blur: 0px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 100%;
+  --shadow-color: #000000;
+  --shadow-2xs: 3px 3px 0px 0px hsl(0 0% 0% / 50.00);
+  --shadow-xs: 3px 3px 0px 0px hsl(0 0% 0% / 50.00);
+  --shadow-sm: 3px 3px 0px 0px hsl(0 0% 0% / 100.00), 3px 1px 2px -1px hsl(0 0% 0% / 100.00);
+  --shadow: 3px 3px 0px 0px hsl(0 0% 0% / 100.00), 3px 1px 2px -1px hsl(0 0% 0% / 100.00);
+  --shadow-md: 3px 3px 0px 0px hsl(0 0% 0% / 100.00), 3px 2px 4px -1px hsl(0 0% 0% / 100.00);
+  --shadow-lg: 3px 3px 0px 0px hsl(0 0% 0% / 100.00), 3px 4px 6px -1px hsl(0 0% 0% / 100.00);
+  --shadow-xl: 3px 3px 0px 0px hsl(0 0% 0% / 100.00), 3px 8px 10px -1px hsl(0 0% 0% / 100.00);
+  --shadow-2xl: 3px 3px 0px 0px hsl(0 0% 0% / 250.00);
+  --tracking-normal: 0.05em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: rgb(0, 0, 0);
+  --foreground: rgb(255, 255, 255);
+  --card: rgb(17, 17, 17);
+  --card-foreground: rgb(255, 255, 255);
+  --popover: rgb(5, 5, 5);
+  --popover-foreground: rgb(255, 255, 255);
+  --primary: rgb(255, 0, 0);
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary: rgb(34, 34, 34);
+  --secondary-foreground: rgb(255, 255, 255);
+  --muted: rgb(26, 26, 26);
+  --muted-foreground: rgb(204, 204, 204);
+  --accent: rgb(255, 215, 0);
+  --accent-foreground: rgb(0, 0, 0);
+  --destructive: rgb(255, 68, 68);
+  --destructive-foreground: rgb(0, 0, 0);
+  --border: rgb(255, 255, 255);
+  --input: rgb(17, 17, 17);
+  --ring: rgb(255, 0, 0);
+  --chart-1: rgb(255, 0, 0);
+  --chart-2: rgb(0, 255, 0);
+  --chart-3: rgb(0, 0, 255);
+  --chart-4: rgb(255, 255, 0);
+  --chart-5: rgb(255, 0, 255);
+  --sidebar: rgb(5, 5, 5);
+  --sidebar-foreground: rgb(255, 255, 255);
+  --sidebar-primary: rgb(255, 0, 0);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(255, 215, 0);
+  --sidebar-accent-foreground: rgb(0, 0, 0);
+  --sidebar-border: rgb(255, 255, 255);
+  --sidebar-ring: rgb(255, 0, 0);
+  --font-sans: "Space Mono", monospace;
+  --font-serif: "IBM Plex Mono", monospace;
+  --font-mono: "Space Mono", monospace;
+  --radius: 0px;
+  --shadow-x: 3px;
+  --shadow-y: 3px;
+  --shadow-blur: 0px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 100%;
+  --shadow-color: #FFFFFF;
+  --shadow-2xs: 3px 3px 0px 0px hsl(0 0% 100% / 50.00);
+  --shadow-xs: 3px 3px 0px 0px hsl(0 0% 100% / 50.00);
+  --shadow-sm: 3px 3px 0px 0px hsl(0 0% 100% / 100.00), 3px 1px 2px -1px hsl(0 0% 100% / 100.00);
+  --shadow: 3px 3px 0px 0px hsl(0 0% 100% / 100.00), 3px 1px 2px -1px hsl(0 0% 100% / 100.00);
+  --shadow-md: 3px 3px 0px 0px hsl(0 0% 100% / 100.00), 3px 2px 4px -1px hsl(0 0% 100% / 100.00);
+  --shadow-lg: 3px 3px 0px 0px hsl(0 0% 100% / 100.00), 3px 4px 6px -1px hsl(0 0% 100% / 100.00);
+  --shadow-xl: 3px 3px 0px 0px hsl(0 0% 100% / 100.00), 3px 8px 10px -1px hsl(0 0% 100% / 100.00);
+  --shadow-2xl: 3px 3px 0px 0px hsl(0 0% 100% / 250.00);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+
+  --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
+  --tracking-tight: calc(var(--tracking-normal) - 0.025em);
+  --tracking-normal: var(--tracking-normal);
+  --tracking-wide: calc(var(--tracking-normal) + 0.025em);
+  --tracking-wider: calc(var(--tracking-normal) + 0.05em);
+  --tracking-widest: calc(var(--tracking-normal) + 0.1em);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    letter-spacing: var(--tracking-normal);
+    text-transform: none;
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.brut-card {
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+.brut-button {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: transform 140ms linear, box-shadow 140ms linear;
+}
+
+.brut-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-xl);
+}
+
+.brut-input {
+  background: var(--input);
+  color: var(--foreground);
+  border: 2px solid var(--border);
+  padding: 0.65rem 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.brut-pill {
+  border: 2px solid var(--border);
+  background: var(--muted);
+  padding: 0.35rem 0.55rem;
+  font-size: 0.8rem;
+  letter-spacing: var(--tracking-tight);
+}
+
+.rail-divider {
+  border-bottom: 2px solid var(--border);
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  background: var(--muted);
+}
+
+.maplibregl-map {
+  font-family: var(--font-sans);
+}
+
+.maplibregl-ctrl-group {
+  border-radius: 0 !important;
+  border: 2px solid var(--border) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.maplibregl-ctrl-group button {
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--border) !important;
+  background: var(--card) !important;
+}
+
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+
+.maplibregl-popup-content {
+  border-radius: 0 !important;
+  border: 2px solid var(--border) !important;
+  box-shadow: var(--shadow-lg) !important;
+  background: var(--card) !important;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  border: 2px solid var(--border);
+  background: var(--muted);
+  box-shadow: var(--shadow-sm);
+  font-size: 0.8rem;
+}
+
+.latency-dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-xs);
+}
+
+.grid-accent {
+  background-image: linear-gradient(var(--border) 2px, transparent 2px), linear-gradient(90deg, var(--border) 2px, transparent 2px);
+  background-size: 48px 48px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.tab-item {
+  flex: 1;
+  border: 2px solid var(--border);
+  border-right: none;
+  background: var(--muted);
+  padding: 0.55rem 0.5rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: background 120ms linear, color 120ms linear, transform 120ms linear;
+  white-space: nowrap;
+}
+
+.tab-item:last-child {
+  border-right: 2px solid var(--border);
+}
+
+.tab-item.active {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-md);
+  z-index: 1;
+  position: relative;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

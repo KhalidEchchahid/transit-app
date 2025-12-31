@@ -1,0 +1,65 @@
+{
+  "scraped_at": "2025-12-16T16:38:51+01:00",
+  "lines": [
+    {
+      "id": "T1",
+      "name": "T1",
+      "type": "tram",
+      "color": "rgba(245,130,31,1)",
+      "origin": "Lissasfa",
+      "destination": "Sidi Moumen",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-tram-t1"
+    },
+    {
+      "id": "T2",
+      "name": "T2",
+      "type": "tram",
+      "color": "rgba(255,220,0,1)",
+      "origin": "Sidi Bernoussi",
+      "destination": "Ain Diab Plage",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-tram-t2"
+    },
+    {
+      "id": "T3",
+      "name": "T3",
+      "type": "tram",
+      "color": "rgba(168,103,125,1)",
+      "origin": "Casa Port",
+      "destination": "Hay Al Wahda",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-tram-t3"
+    },
+    {
+      "id": "T4",
+      "name": "T4",
+      "type": "tram",
+      "color": "rgba(86,147,193,1)",
+      "origin": "Mohammed Erradi",
+      "destination": "Parc de la Ligue Arabe",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-tram-t4"
+    },
+    {
+      "id": "BW1",
+      "name": "BW1",
+      "type": "busway",
+      "color": "rgba(5,120,15,1)",
+      "origin": "Omar Al Khayam Terminus",
+      "destination": "Salmia 2 Terminus",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-busway-bw1"
+    },
+    {
+      "id": "BW2",
+      "name": "BW2",
+      "type": "busway",
+      "color": "rgba(80,220,100,1)",
+      "origin": "Ouled Azzouz Terminus",
+      "destination": "Oulmes Terminus",
+      "stations": null,
+      "detail_url": "https://www.casatramway.ma/horaires/horaires-de-services/ligne-busway-bw2"
+    }
+  ]
+}

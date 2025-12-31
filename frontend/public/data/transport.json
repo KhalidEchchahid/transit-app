@@ -1,0 +1,588 @@
+{
+    "scraped_at": "2025-12-16T16:45:00+01:00",
+    "source": "casatramway.ma + OpenStreetMap",
+    "pricing": {
+        "standard_fare": 8,
+        "currency": "MAD",
+        "transfer_allowed": true,
+        "transfer_note": "Valid for tram-tram and tram-busway transfers within 1 hour"
+    },
+    "lines": [
+        {
+            "id": "T1",
+            "name": "T1",
+            "type": "tram",
+            "color": "#F5821F",
+            "origin": "Lissasfa",
+            "destination": "Sidi Moumen",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "6-10 min"
+            }
+        },
+        {
+            "id": "T2",
+            "name": "T2",
+            "type": "tram",
+            "color": "#FFDC00",
+            "origin": "Sidi Bernoussi",
+            "destination": "Ain Diab Plage",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "6-10 min"
+            }
+        },
+        {
+            "id": "T3",
+            "name": "T3",
+            "type": "tram",
+            "color": "#A8677D",
+            "origin": "Casa Port",
+            "destination": "Hay Al Wahda",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "6-10 min"
+            }
+        },
+        {
+            "id": "T4",
+            "name": "T4",
+            "type": "tram",
+            "color": "#5693C1",
+            "origin": "Mohammed Erradi",
+            "destination": "Parc de la Ligue Arabe",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "6-10 min"
+            }
+        },
+        {
+            "id": "BW1",
+            "name": "BW1",
+            "type": "busway",
+            "color": "#05780F",
+            "origin": "Omar Al Khayam Terminus",
+            "destination": "Salmia 2 Terminus",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "8-12 min"
+            }
+        },
+        {
+            "id": "BW2",
+            "name": "BW2",
+            "type": "busway",
+            "color": "#50DC64",
+            "origin": "Ouled Azzouz Terminus",
+            "destination": "Oulmes Terminus",
+            "schedule": {
+                "first_departure": "05:30",
+                "last_departure": "22:30",
+                "frequency": "8-12 min"
+            }
+        }
+    ],
+    "stations": [
+        {
+            "id": 1,
+            "name": "Sidi Moumen Terminus",
+            "lat": 33.5869,
+            "lon": -7.5015,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Ennassim",
+            "lat": 33.5849,
+            "lon": -7.5047,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Mohamed Zefzaf",
+            "lat": 33.5824,
+            "lon": -7.5087,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Centre de Maintenance",
+            "lat": 33.5795,
+            "lon": -7.5131,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Hôpital Sidi Moumen",
+            "lat": 33.5766,
+            "lon": -7.5177,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Attacharouk",
+            "lat": 33.5741,
+            "lon": -7.5243,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Okba Ibn Nafii",
+            "lat": 33.5729,
+            "lon": -7.5326,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Forces Auxilliaires",
+            "lat": 33.5747,
+            "lon": -7.5395,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Hay Raja",
+            "lat": 33.5767,
+            "lon": -7.5485,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Ibn Tachfine",
+            "lat": 33.5808,
+            "lon": -7.5634,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Hay Mohammadi",
+            "lat": 33.5856,
+            "lon": -7.5667,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Chouhada",
+            "lat": 33.5885,
+            "lon": -7.5678,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Ali Yata",
+            "lat": 33.5915,
+            "lon": -7.5700,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Grande Ceinture",
+            "lat": 33.5904,
+            "lon": -7.5738,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Anciens Abattoirs",
+            "lat": 33.5910,
+            "lon": -7.5786,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Boulevard Bahmad",
+            "lat": 33.5948,
+            "lon": -7.5864,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Casa Voyageurs",
+            "lat": 33.5904,
+            "lon": -7.5919,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Place Al Yassir",
+            "lat": 33.5929,
+            "lon": -7.5969,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "La Résistance",
+            "lat": 33.5934,
+            "lon": -7.6032,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Mohamed Diouri",
+            "lat": 33.5937,
+            "lon": -7.6078,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Marché Central",
+            "lat": 33.5946,
+            "lon": -7.6126,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Place des Nations Unies",
+            "lat": 33.5951,
+            "lon": -7.6181,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Place Mohammed V",
+            "lat": 33.5896,
+            "lon": -7.6200,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Avenue Hassan II",
+            "lat": 33.5841,
+            "lon": -7.6230,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Les Hôpitaux",
+            "lat": 33.5800,
+            "lon": -7.6248,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Faculté de Médecine",
+            "lat": 33.5749,
+            "lon": -7.6258,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Abdelmoumen",
+            "lat": 33.5706,
+            "lon": -7.6260,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Bachkou",
+            "lat": 33.5652,
+            "lon": -7.6269,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Mekka",
+            "lat": 33.5578,
+            "lon": -7.6298,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Gare Oasis",
+            "lat": 33.5541,
+            "lon": -7.6313,
+            "lines": [
+                "T1",
+                "T2"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Panoramique",
+            "lat": 33.5472,
+            "lon": -7.6319,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Technopark",
+            "lat": 33.5446,
+            "lon": -7.6381,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Zenith",
+            "lat": 33.5407,
+            "lon": -7.6428,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Gare Casa Sud",
+            "lat": 33.5420,
+            "lon": -7.6506,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Facultés",
+            "lat": 33.5458,
+            "lon": -7.6572,
+            "lines": [
+                "T1"
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Derb Ghalef",
+            "lat": 33.5700,
+            "lon": -7.6317,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Riviera",
+            "lat": 33.5709,
+            "lon": -7.6364,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Ghandi",
+            "lat": 33.5688,
+            "lon": -7.6446,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Beauséjour",
+            "lat": 33.5643,
+            "lon": -7.6479,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Anfa Clubs",
+            "lat": 33.5613,
+            "lon": -7.6530,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Anfa Park",
+            "lat": 33.5598,
+            "lon": -7.6575,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Place Financière",
+            "lat": 33.5623,
+            "lon": -7.6609,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Abdellah Ben Cherif",
+            "lat": 33.5659,
+            "lon": -7.6603,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Cité de l'Air",
+            "lat": 33.5682,
+            "lon": -7.6642,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Sidi Abderrahmane",
+            "lat": 33.5720,
+            "lon": -7.6694,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 46,
+            "name": "Hay Hassani",
+            "lat": 33.5766,
+            "lon": -7.6729,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Littoral",
+            "lat": 33.5809,
+            "lon": -7.6748,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Ain Diab Plage",
+            "lat": 33.5874,
+            "lon": -7.6808,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Terminus Sidi Bernoussi",
+            "lat": 33.6101,
+            "lon": -7.5098,
+            "lines": [
+                "T2"
+            ]
+        },
+        {
+            "id": 50,
+            "name": "Casa Port",
+            "lat": 33.5983,
+            "lon": -7.6119,
+            "lines": [
+                "T3"
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Hay Al Wahda",
+            "lat": 33.5447,
+            "lon": -7.5489,
+            "lines": [
+                "T3"
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Mohammed Erradi",
+            "lat": 33.5693,
+            "lon": -7.5182,
+            "lines": [
+                "T4"
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Parc de la Ligue Arabe",
+            "lat": 33.5881,
+            "lon": -7.6221,
+            "lines": [
+                "T4"
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Lissasfa Terminus",
+            "lat": 33.5351,
+            "lon": -7.6701,
+            "lines": [
+                "T1"
+            ]
+        }
+    ]
+}
