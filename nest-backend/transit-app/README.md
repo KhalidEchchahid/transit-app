@@ -29,6 +29,12 @@
 
 This workspace now includes a minimal JWT authentication service powered by Passport. Everything is in-memory for rapid prototyping, so restarting the server clears previously registered users.
 
+Copy `.env.example` to `.env` and set a secure `JWT_SECRET` before starting the API:
+
+```bash
+cp .env.example .env
+```
+
 1. Install deps and start the API:
 
    ```bash

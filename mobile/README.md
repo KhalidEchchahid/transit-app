@@ -24,7 +24,7 @@ A React Native mobile application for Casablanca public transit, featuring a neo
 
 ## Project Structure
 
-```
+```text
 mobile/
 ├── app/                    # Expo Router screens
 │   ├── _layout.tsx        # Root layout with providers
@@ -59,7 +59,7 @@ mobile/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - Expo CLI (`npm install -g expo-cli`)
 - Expo Go app (for development) or Xcode/Android Studio
@@ -96,7 +96,7 @@ npx expo start
 
 If you see an error like:
 
-```
+```text
 [Worklets] Mismatch between JavaScript part and native part of Worklets (0.7.1 vs 0.5.1)
 ```
 
@@ -104,14 +104,14 @@ This typically means the JavaScript bundle and the native runtime on your device
 
 Try in this order:
 
-1) Update Expo Go on your device/simulator (App Store / Play Store), then restart Metro with cache cleared:
+1. Update Expo Go on your device/simulator (App Store / Play Store), then restart Metro with cache cleared:
 
 ```bash
 cd mobile
 npx expo start -c
 ```
 
-2) If you're using a custom dev client (or `expo run:android` / `expo run:ios`), rebuild it after dependency changes:
+2. If you're using a custom dev client (or `expo run:android` / `expo run:ios`), rebuild it after dependency changes:
 
 ```bash
 cd mobile
@@ -121,7 +121,7 @@ npx expo run:android
 npx expo run:ios
 ```
 
-3) If it still persists, do a clean reinstall of JS deps and restart:
+3. If it still persists, do a clean reinstall of JS deps and restart:
 
 ```bash
 cd mobile
@@ -133,6 +133,17 @@ npx expo start -c
 Note: The Expo Router warnings about missing `default` exports and “extraneous routes” can appear as a side-effect of this crash, because route modules fail to evaluate.
 
 ## Configuration
+
+### Environment variables
+
+Copy `.env.example` to `.env` and update the values before running the app:
+
+```bash
+cp .env.example .env
+# update EXPO_PUBLIC_API_BASE_URL to point at your backend
+```
+
+When testing on a physical device, remember to use your computer's LAN IP instead of `localhost` so the phone can reach the backend.
 
 ### API Configuration
 
