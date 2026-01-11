@@ -140,27 +140,28 @@ export class RaptorService {
             }
           }
 
-          // Can we board a trip here?
+          // Can we board an earlier trip here? (RAPTOR improvement)
+          // Check if we can catch an earlier trip at this stop
           const prevArrival = rounds[k - 1][stopId];
           if (prevArrival < INFINITY) {
-            let foundTrip = false;
+            // Find the earliest trip that departs after our arrival
             for (let t = 0; t < route.trips.length; t++) {
               const trip = route.trips[t];
               if (trip.serviceId !== dayType) continue;
               const dep = trip.stopTimes[i].departure;
               if (dep >= prevArrival) {
-                currentTrip = {
-                  tripIdx: t,
-                  stopTimes: trip.stopTimes.map((st) => st.arrival),
-                };
-                boardStop = stopId;
-                boardTime = dep;
-                foundTrip = true;
+                // Only board if this trip is better than current trip
+                if (currentTrip === null || dep < boardTime) {
+                  currentTrip = {
+                    tripIdx: t,
+                    stopTimes: trip.stopTimes.map((st) => st.arrival),
+                  };
+                  boardStop = stopId;
+                  boardTime = dep;
+                }
+                // Since trips are sorted by departure, break after finding first valid
                 break;
               }
-            }
-            if (!foundTrip) {
-              currentTrip = null;
             }
           }
         }

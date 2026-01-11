@@ -1,35 +1,4 @@
-// ========== ANONYMOUS AUTH TYPES ==========
-
-export interface AnonymousUser {
-  id: number;
-  hasPin: boolean;
-  createdAt: string;
-}
-
-export interface AnonymousAuthResponse {
-  accessToken: string;
-  user: AnonymousUser;
-}
-
-export interface AnonymousRegisterRequest {
-  tokenHash: string;
-  recoveryHash: string;
-  pin?: string;
-}
-
-export interface AnonymousLoginRequest {
-  tokenHash: string;
-  pin?: string;
-}
-
-export interface AnonymousRecoverRequest {
-  recoveryHash: string;
-  newTokenHash: string;
-  newPin?: string;
-}
-
-// ========== LEGACY AUTH TYPES (for email/password) ==========
-
+// Regular user (email-based auth)
 export interface User {
   id: number;
   email: string;
@@ -52,4 +21,27 @@ export interface SignUpRequest {
 export interface SignInRequest {
   email: string;
   password: string;
+}
+
+// Anonymous user (privacy-first auth)
+export interface AnonymousUser {
+  id: number;
+  uuid: string;
+  createdAt: string;
+  lastSeenAt: string;
+}
+
+export interface AnonymousAuthResponse {
+  accessToken: string;
+  user: AnonymousUser;
+  /** Only returned on registration - user must save this! */
+  credentials?: {
+    uuid: string;
+    passkey: string;
+  };
+}
+
+export interface AnonymousLoginRequest {
+  uuid: string;
+  passkey: string;
 }

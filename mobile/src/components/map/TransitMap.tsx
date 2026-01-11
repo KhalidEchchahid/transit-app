@@ -23,6 +23,7 @@ import Animated, {
 import * as Haptics from 'expo-haptics';
 import { useTheme } from '@/theme/ThemeProvider';
 import { DEFAULT_CENTER } from '@/lib/constants';
+import { smoothRoutePath } from '@/lib/routeUtils';
 import type { Stop, JourneyLeg, MapMarker, MapPolyline, MapRegion } from '@/lib/types';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
@@ -182,10 +183,11 @@ function TransitMapComponent({
     longitudeDelta: 0.05,
   };
 
-  // Convert journey legs to polylines
+  // Convert journey legs to polylines with smooth curves
   const polylines = useMemo<MapPolyline[]>(() => {
     return journeyLegs.map((leg, index) => {
-      const coordinates = leg.geometry
+      // Get raw coordinates from geometry or stop locations
+      const rawCoordinates = leg.geometry
         ? leg.geometry.map(([lon, lat]) => ({ latitude: lat, longitude: lon }))
         : [
             { latitude: leg.fromStop.lat, longitude: leg.fromStop.lon },
@@ -193,6 +195,16 @@ function TransitMapComponent({
           ];
 
       const isWalk = leg.type?.toLowerCase() === 'walk';
+
+      // Apply smooth curve interpolation for transit routes (not walks)
+      // Walks use dashed lines so smoothing isn't needed
+      const coordinates = !isWalk && rawCoordinates.length >= 2
+        ? smoothRoutePath(rawCoordinates, {
+            tension: 0.4,      // Moderate curve smoothness
+            minSegments: 4,    // Minimum interpolation segments
+            maxSegments: 12,   // Maximum interpolation segments
+          })
+        : rawCoordinates;
 
       const baseColor =
         normalizeRouteColor(leg.routeColor) ||
@@ -396,8 +408,8 @@ function TransitMapComponent({
                 coordinates={polyline.coordinates}
                 strokeWidth={polyline.width + 4}
                 strokeColor="#000000"
-                lineCap="square"
-                lineJoin="miter"
+                lineCap="round"
+                lineJoin="round"
               />
             )}
             {/* Main line */}
@@ -405,8 +417,8 @@ function TransitMapComponent({
               coordinates={polyline.coordinates}
               strokeWidth={polyline.width}
               strokeColor={polyline.color}
-              lineCap="square"
-              lineJoin="miter"
+              lineCap="round"
+              lineJoin="round"
               lineDashPattern={polyline.isWalk ? [8, 8] : undefined}
             />
           </React.Fragment>

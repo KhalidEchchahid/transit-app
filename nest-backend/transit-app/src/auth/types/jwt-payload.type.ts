@@ -1,4 +1,6 @@
 export interface JwtPayload {
   sub: number;
-  email: string;
+  email?: string;
+  uuid?: string;
+  anonymous?: boolean;
 }

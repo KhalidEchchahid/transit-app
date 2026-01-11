@@ -1,21 +1,7 @@
-import { Stack } from 'expo-router';
-import { useTheme } from '@/theme/ThemeProvider';
+import { Redirect } from 'expo-router';
 
 export default function AuthLayout() {
-  const { theme } = useTheme();
-
-  return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-        contentStyle: {
-          backgroundColor: theme.colors.background,
-        },
-        animation: 'slide_from_right',
-      }}
-    >
-      <Stack.Screen name="login" />
-      <Stack.Screen name="register" />
-    </Stack>
-  );
+  // With anonymous auth, we don't need login/register screens
+  // Redirect to main app
+  return <Redirect href="/(tabs)" />;
 }

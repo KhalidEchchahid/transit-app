@@ -8,7 +8,7 @@ import { useCallback, useEffect } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { ThemeProvider, useTheme } from '@/theme/ThemeProvider';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { AuthProvider, useAuth } from '@/lib/AuthContext';
+import { AnonymousAuthProvider, useAnonymousAuth } from '@/lib/AnonymousAuthContext';
 
 // Prevent splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
@@ -27,29 +27,19 @@ const queryClient = new QueryClient({
 
 function NavigationStack() {
   const { theme, isDark } = useTheme();
-  const { isAuthenticated, isLoading } = useAuth();
+  const { isAuthenticated, isLoading, register, credentials, clearCredentialsDisplay } = useAnonymousAuth();
   const segments = useSegments();
   const navigationState = useRootNavigationState();
 
+  // Auto-register anonymous user on first launch
   useEffect(() => {
-    // Wait for navigation to be ready
-    if (!navigationState?.key) return;
-    
-    const inAuthGroup = (segments[0] as string) === 'auth';
-    
-    if (!isLoading) {
-      if (!isAuthenticated && !inAuthGroup) {
-        // Redirect to login if not authenticated
-        router.replace('/auth/login' as any);
-      } else if (isAuthenticated && inAuthGroup) {
-        // Redirect to home if authenticated and in auth group
-        router.replace('/(tabs)');
-      }
+    if (!isLoading && !isAuthenticated) {
+      register().catch(console.error);
     }
-  }, [isAuthenticated, isLoading, segments, navigationState?.key]);
+  }, [isLoading, isAuthenticated, register]);
 
-  // Show loading screen while checking auth
-  if (isLoading) {
+  // Show loading screen while checking auth or registering
+  if (isLoading || !isAuthenticated) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: theme.colors.background }}>
         <ActivityIndicator size="large" color={theme.colors.primary} />
@@ -127,11 +117,11 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <QueryClientProvider client={queryClient}>
           <ThemeProvider>
-            <AuthProvider>
+            <AnonymousAuthProvider>
               <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
                 <NavigationStack />
               </View>
-            </AuthProvider>
+            </AnonymousAuthProvider>
           </ThemeProvider>
         </QueryClientProvider>
       </SafeAreaProvider>

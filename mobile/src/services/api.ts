@@ -14,6 +14,8 @@ import type {
   SignUpRequest,
   SignInRequest,
   User,
+  AnonymousAuthResponse,
+  AnonymousLoginRequest,
 } from '../lib/auth-types';
 
 /**
@@ -115,6 +117,47 @@ export const api = {
         Authorization: `Bearer ${token}`,
       },
     });
+  },
+
+  // ========== ANONYMOUS AUTH ==========
+
+  /**
+   * Register a new anonymous user.
+   * Returns UUID + passkey that user MUST save for account recovery.
+   */
+  async anonymousRegister(): Promise<AnonymousAuthResponse> {
+    return fetchWithTimeout<AnonymousAuthResponse>(
+      `${API_BASE_URL.replace('/api/v1', '')}/auth/anonymous/register`,
+      { method: 'POST' }
+    );
+  },
+
+  /**
+   * Login with existing UUID + passkey.
+   * Used for multi-device access or after app reinstall.
+   */
+  async anonymousLogin(data: AnonymousLoginRequest): Promise<AnonymousAuthResponse> {
+    return fetchWithTimeout<AnonymousAuthResponse>(
+      `${API_BASE_URL.replace('/api/v1', '')}/auth/anonymous/login`,
+      {
+        method: 'POST',
+        body: JSON.stringify(data),
+      }
+    );
+  },
+
+  /**
+   * Refresh token for currently authenticated anonymous user.
+   */
+  async anonymousRefresh(token: string): Promise<AnonymousAuthResponse> {
+    return fetchWithTimeout<AnonymousAuthResponse>(
+      `${API_BASE_URL.replace('/api/v1', '')}/auth/anonymous/refresh`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
   },
 
   // ========== TRANSPORT ==========
